@@ -24,13 +24,13 @@ def check_if_documents_the_same() -> str:
     Checks if two uploaded files are the same.
     """
     try:
-        file1 = request.files["file1"].read()
-        file2 = request.files["file2"].read()
+        file1 = request.files.get("file1").read()
+        file2 = request.files.get("file2").read()
         result = hash_creator.check_if_files_the_same(file1, file2)
 
         if not result:
             return "Files are different!"
-        return "Files are same!"
+        return "Files are the same!"
 
     except Exception as e:
         return str(e)
