@@ -1,6 +1,6 @@
 import pytest
 
-from .constants import PUPPY_COPY_PATH, PUPPY_PATH, TEXT_PATH, TEXT_DIFFERENT_PATH
+from .paths import PUPPY_COPY_PATH, PUPPY_PATH, TEXT_PATH, TEXT_DIFFERENT_PATH
 
 
 @pytest.fixture()
