@@ -1,6 +1,6 @@
 import pytest
 
-from ..CompareFiles import CompareFiles
+from CompareFiles import CompareFiles
 
 
 @pytest.fixture

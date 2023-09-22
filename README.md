@@ -9,5 +9,5 @@ $ curl -X POST -F file1=@tests/testcases/puppy.jpg -F file2=@tests/testcases/pup
 ## To run test, run the command:
 ```
 $ cd <path-to-project>
-$ pytest
+$ python -m pytest
 ```
