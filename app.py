@@ -1,5 +1,6 @@
 from flask import Flask, request
-from CompareFiles import CompareFiles
+
+from .CompareFiles import CompareFiles
 
 DEBUG = True
 HOST = "0.0.0.0"
@@ -28,8 +29,8 @@ def check_if_documents_the_same() -> str:
         result = hash_creator.check_if_files_the_same(file1, file2)
 
         if not result:
-            return "The documents are different!"
-        return "The documents are same!"
+            return "Files are different!"
+        return "Files are same!"
 
     except Exception as e:
         return str(e)
