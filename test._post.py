@@ -1,13 +1,12 @@
 import requests
-from pathlib import Path
+from tests.paths import PUPPY_COPY_PATH, PUPPY_PATH
 
 # before running this, make sure that the flask app is running
 
-path_to_testcases = Path.cwd() / "tests" / "testcases"
 
 files = {
-    "file1": open(path_to_testcases / "puppy.jpg", "rb"),
-    "file2": open(path_to_testcases / "puppy_copy.jpg", "rb"),
+    "file1": open(PUPPY_PATH, "rb"),
+    "file2": open(PUPPY_COPY_PATH, "rb"),
 }
 
 result = requests.post("http://localhost:5011/check-documents", files=files)
