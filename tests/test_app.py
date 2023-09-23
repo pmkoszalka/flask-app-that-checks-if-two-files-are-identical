@@ -3,7 +3,7 @@ import flask as Flask
 from flask.testing import FlaskClient
 import pytest
 
-from app import app as my_app
+from src.app import app as my_app
 
 FILE1 = "file1"
 FILE2 = "file2"

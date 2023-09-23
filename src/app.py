@@ -1,6 +1,6 @@
 from flask import Flask, request
 
-from CompareFiles import CompareFiles
+from src.CompareFiles import CompareFiles
 
 DEBUG = True
 HOST = "0.0.0.0"
